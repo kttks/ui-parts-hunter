@@ -70,7 +70,7 @@ case 'stepper':s=`<path d="M28 65 H191" stroke="#a9bbce" stroke-width="4"/>`+[0,
 case 'pagination':s=[0,1,2,3].map(i=>rect(20+i*45,47,37,41,i===1?'#2981d9':'white')+txt(34+i*45,73,i+1,16,i===1?'white':'#657b93')).join('');break;
 case 'dialog':s=rect(10,8,200,146,'#d9e2ee')+rect(35,25,150,116)+txt(49,51,'Confirm',18)+line(49,68,106)+rect(102,99,67,27,'#2981d9')+txt(125,118,'OK',14,'white');break;
 case 'toast':s=rect(10,10,200,140,'#f4f7fb',6)+rect(14,14,192,19,'#e2eaf3',3)+line(23,20,75)+line(25,45,100)+rect(25,63,77,29,'#e2eaf3',4)+rect(113,63,77,29,'#e2eaf3',4)+rect(31,105,158,32,'#344963',7)+circ(49,121,9,'#64ccab')+`<path d="M45 121l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`+txt(66,125,'保存しました',12,'#fff');break;
-case 'tooltip':s=rect(18,45,65,37,'white')+txt(37,68,'?',21)+rect(93,24,110,68,'#344963')+txt(107,51,'Help text',13,'white')+line(107,66,64);break;
+case 'tooltip':s=rect(14,15,192,130,'#fff',6)+txt(26,40,'項目1',13)+circ(83,35,7,'#b7c3d0')+txt(81.5,38.5,'i',10,'#fff')+txt(26,69,'項目2',13)+circ(83,64,7,'#b7c3d0')+txt(81.5,67.5,'i',10,'#fff')+rect(20,82,180,28,'#e7e0fb',4)+txt(26,101,'項目3',13)+circ(83,96,7,'#7959c9')+txt(81.5,99.5,'i',10,'#fff')+txt(26,131,'項目4',13)+circ(83,126,7,'#b7c3d0')+txt(81.5,129.5,'i',10,'#fff')+`<path d="M74 40H194Q200 40 200 46V76Q200 82 194 82H90L83 90L76 82H74Q68 82 68 76V46Q68 40 74 40Z" fill="#344963" stroke="#afc1d5"/>`+txt(79,57,'この項目についての',11,'#fff')+txt(79,72,'補足説明です。',11,'#fff');break;
 case 'badge':s=rect(41,51,136,48,'#d5eafa',24)+txt(69,80,'Active',18,'#176ab4');break;
 case 'breadcrumb':s=txt(13,74,'Home  ›  Setup  ›  Detail',16);break;
 
